@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#F3FBFB ;
+}
+.container{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    width: 350px;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    color: #33436C;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.profile{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 5px;
+   margin-right: 100px;
+
+}
+.profile .profilePicture{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-color: #d8e2e2;
+    margin: 5px;
+    margin-left: 5px;
+    
+}
+.profile .personalInfo .profession{
+    font-size: small;
+    color: #33436C;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.profile .personalInfo .Name{
+
+    font-weight: 900;
+    font-size: large;
+
+}
+.profile .personalInfo {
+
+    margin-left: 5px;
+}
+.infoOfUser{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    color: #33436C;
+    font-size: small;
+    font-weight: 600;
+    
+}
+
+.infoOfUser .ratings{
+    margin-right: 38px;
+    
+}
+
+.infoOfUser .reviews{
+    margin-right: 22px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    
+}
+
+.infoOfUser .students{
+    margin-right: 28px;
+    margin-bottom: 7px;
+    
+}
+
+.bottom{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bottom .text{
+    text-align: left;
+    color: #33436C;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 124px;
+}
+.bottom button{
+    margin-right: 20px;
+    margin-top: 15px;
+    color: #33436C;
+    padding: 4px;
+    font-weight: 600;
+    border-radius:2px ;
+    border-color: #F3FBFB;
+    border-width: 1px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+    
+}
+button:hover{
+    background-color: #F3FBFB;
+
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-left: 3px;
+
+    
+}
+.icons .far{
+
+    margin-top: 7px;
+    margin-bottom: 5px;
+    
+}
+.fas{
+    margin-bottom: 5px;
+}
