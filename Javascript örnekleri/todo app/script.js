@@ -2,9 +2,9 @@
 const form = document.getElementById("form");
 const input = document.getElementById("input");
 const todos = document.getElementById("todos");
-
+const toast = document.querySelector(".toast");
 const addbutton = document.getElementById("AddButton");
-
+const alert = new bootstrap.Toast(toast)
 const listeElemani = JSON.parse(localStorage.getItem("todos"));
 
 if (listeElemani) {
@@ -17,6 +17,7 @@ function addTodo(params) {
     var todo = document.createElement("li");
     const removeButton = document.createElement("button");
     removeButton.innerHTML = "Sil";
+    removeButton.classList.add("removeButton")
     const todoText = input.value; 
     removeButton.addEventListener("click", (e)=>{
         e.preventDefault();
@@ -27,6 +28,7 @@ function addTodo(params) {
         todo.innerText= todoText;
         todos.appendChild(todo);
         todo.appendChild(removeButton);
+        alert.show();
     }
     for(let i=0;i<todo.length;i++){
         console.log("Çalişti")
