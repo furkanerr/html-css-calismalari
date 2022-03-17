@@ -3,6 +3,7 @@ const form = document.getElementById("form");
 const input = document.getElementById("input");
 const todos = document.getElementById("todos");
 
+const addbutton = document.getElementById("AddButton");
 
 const listeElemani = JSON.parse(localStorage.getItem("todos"));
 
@@ -13,12 +14,23 @@ if (listeElemani) {
 }
 
 function addTodo(params) {
-    let todo = document.createElement("li");
+    var todo = document.createElement("li");
+    const removeButton = document.createElement("button");
+    removeButton.innerHTML = "Sil";
     const todoText = input.value; 
-
-    if(todoText){
+    removeButton.addEventListener("click", (e)=>{
+        e.preventDefault();
+        removeButton.parentElement.style.display = 'none';
+        console.log("button çalişti")
+    })
+    if(todoText){   
         todo.innerText= todoText;
         todos.appendChild(todo);
+        todo.appendChild(removeButton);
+    }
+    for(let i=0;i<todo.length;i++){
+        console.log("Çalişti")
+        todo[i].appendChild(removeButton);
     }
     input.value='';
 
@@ -28,10 +40,12 @@ function addTodo(params) {
     updateLS();
 }
 
-form.addEventListener('submit',(e)=>{
-    e.preventDefault();
+ 
 
-   addTodo();
+
+addbutton.addEventListener("click",(e)=>{
+    e.preventDefault();
+    addTodo();
 })
 
 function updateLS() {
@@ -48,5 +62,4 @@ function updateLS() {
 
     localStorage.setItem("todos", JSON.stringify(todos));
 }
-
 
