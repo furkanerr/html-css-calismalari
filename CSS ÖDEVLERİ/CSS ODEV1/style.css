@@ -1,0 +1,56 @@
+
+
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03b2cb;
+    width: 800px;
+    height: 50px;
+    margin-left: 30%;
+    
+}
+
+button{
+    display: inline;
+    background-color: rgb(253, 254, 255);
+  border: none;
+  border-radius: 5px;
+  margin:5px;
+  height: 30px;
+   
+}
+a{
+    text-decoration: none;
+    color:#bb921b;
+}
+.metinContainer{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+}
+.turlerContainer{
+    
+    align-items: center;
+    justify-content: center;
+
+}
+.kopekliste{
+    margin-left: 100px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.hakkımızdaContainer{
+    width: 30%;
+    margin-left: 30%;;
+}
+img{
+    border-radius: 20px;
+}
+
+
